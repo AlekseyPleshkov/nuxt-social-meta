@@ -1,0 +1,11 @@
+{
+  "name": "@nuxtjs/social-meta",
+  "version": "0.0.1",
+  "description": "Generate meta-tags for social network - facebook and twitter.",
+  "license": "MIT",
+  "repository": "https://github.com/AlekseyPleshkov/nuxt-social-meta",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js"
+}
