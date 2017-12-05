@@ -1,5 +1,5 @@
 {
-  "name": "@nuxtjs/social-meta",
+  "name": "nuxt-social-meta",
   "version": "0.0.1",
   "description": "Nuxt.js module generate meta-tags for social network - facebook and twitter.",
   "license": "MIT",
