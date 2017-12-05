@@ -1,6 +1,6 @@
 # Nuxt social meta
 
-Generate meta-tags for social network - facebook and twitter.
+Nuxt.js module generate meta-tags for social network - facebook and twitter.
 
 ## Install
 
