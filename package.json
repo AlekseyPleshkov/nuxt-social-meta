@@ -1,7 +1,7 @@
 {
   "name": "nuxt-social-meta",
-  "version": "0.0.1",
-  "description": "Nuxt.js module generate meta-tags for social network - facebook and twitter.",
+  "version": "0.0.5",
+  "description": "Nuxt.js module generate meta-tags for social networks - Facebook, Twitter and LinkedIn (and the rest uses OG tags, such as Discord etc.).",
   "license": "MIT",
   "repository": "https://github.com/AlekseyPleshkov/nuxt-social-meta",
   "publishConfig": {
