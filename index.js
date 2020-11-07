@@ -8,13 +8,13 @@ module.exports = function socialMeta(options) {
     { name: "theme-color", content: options.themeColor },
 
     // Facebook & LinkedIn
-    { name: "og:title", content: options.title },
-    { name: "og:description", content: options.description },
-    { name: "og:type", content: "website" },
-    { name: "og:url", content: options.url },
-    { name: "og:image", content: options.img },
-    { name: "og:locale", content: options.locale },
-    { name: "og:site_name", content: options.site_name },
+    { property: "og:title", content: options.title },
+    { property: "og:description", content: options.description },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: options.url },
+    { property: "og:image", content: options.img },
+    { property: "og:locale", content: options.locale },
+    { property: "og:site_name", content: options.site_name },
 
     // Twitter
     { name: "twitter:card", content: options.twitter_card },
@@ -28,16 +28,16 @@ module.exports = function socialMeta(options) {
   // Add meta tags to head
   metaTags.forEach((tag) => {
     if (tag.content !== undefined && tag.content !== null) {
-      if (tag.name.startsWith("og:")) {
-        this.options.head.meta.push({
-          hid: tag.name,
-          property: tag.name,
-          content: tag.content,
-        });
-      } else {
+      if (tag.hasOwnProperty("name")) {
         this.options.head.meta.push({
           hid: tag.name,
           name: tag.name,
+          content: tag.content,
+        });
+      }else if(tag.hasOwnProperty("property")){
+        this.options.head.meta.push({
+          hid: tag.property,
+          property: tag.property,
           content: tag.content,
         });
       }
