@@ -27,6 +27,8 @@ module.exports = {
         site_name: "Site name",
         description: "Site description",
         img: "Link to image in static folder",
+        imgWidth: "300",
+        imgHeight: "300",
         locale: "en_US",
         twitter: "@user",
         twitter_card: "summary_large_image",
