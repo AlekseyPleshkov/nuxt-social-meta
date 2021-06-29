@@ -5,7 +5,7 @@ module.exports = function socialMeta(options) {
     { name: "author", content: options.url },
     { name: "publisher", content: options.url },
     { name: "apple-mobile-web-app-title", content: options.title },
-    { name: "theme-color", content: options.themeColor },
+    { name: "theme-color", content: options.theme_color },
 
     // Facebook & LinkedIn
     { property: "og:title", content: options.title },
@@ -13,8 +13,8 @@ module.exports = function socialMeta(options) {
     { property: "og:type", content: "website" },
     { property: "og:url", content: options.url },
     { property: "og:image", content: options.img },
-    { property: "og:image:width", content: options.imgWidth },
-    { property: "og:image:height", content: options.imgHeight },
+    { property: "og:image:width", content: options.img_size.width },
+    { property: "og:image:height", content: options.img_size.height },
     { property: "og:locale", content: options.locale },
     { property: "og:site_name", content: options.site_name },
 
@@ -25,8 +25,8 @@ module.exports = function socialMeta(options) {
     { name: "twitter:title", content: options.title },
     { name: "twitter:description", content: options.description },
     { name: "twitter:image", content: options.img },
-    { name: "twitter:image:width", content: options.imgWidth },
-    { name: "twitter:image:height", content: options.imgHeight },
+    { name: "twitter:image:width", content: options.img_size.width },
+    { name: "twitter:image:height", content: options.img_size.height },
   ];
 
   // Add meta tags to head
