@@ -13,6 +13,8 @@ module.exports = function socialMeta(options) {
     { property: "og:type", content: "website" },
     { property: "og:url", content: options.url },
     { property: "og:image", content: options.img },
+    { property: "og:image:width", content: options.imgWidth },
+    { property: "og:image:height", content: options.imgHeight },
     { property: "og:locale", content: options.locale },
     { property: "og:site_name", content: options.site_name },
 
@@ -23,6 +25,8 @@ module.exports = function socialMeta(options) {
     { name: "twitter:title", content: options.title },
     { name: "twitter:description", content: options.description },
     { name: "twitter:image", content: options.img },
+    { name: "twitter:image:width", content: options.imgWidth },
+    { name: "twitter:image:height", content: options.imgHeight },
   ];
 
   // Add meta tags to head
