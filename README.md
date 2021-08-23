@@ -37,3 +37,32 @@ module.exports = {
   ],
 };
 ```
+
+## Override
+
+The `title` meta will automatically overwrite, while for all the other `meta` properties (such as `og: title`, `og: description`, etc.) the `hid` attribute **must** be entered to override the desired property.
+
+```js
+export default {
+  ...
+  head() {
+    return {
+      title: 'Page title',
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Page title',
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Page description',
+        },
+        ...
+      ]
+    }
+  }
+  ...
+}
+```
